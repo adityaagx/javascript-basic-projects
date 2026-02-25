@@ -2,24 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Notes App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>notes-app</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Notes app</h3>
 
-    <input type="text" id="add-note" />
-    <br><br>
-    <button id="addBtn">Add note</button>
+    <div class="container">
+        <h1>📝 Notes App</h1>
 
-    <ol id="notesList">
-        .
-    </ol>
+        <!-- Add Note Button -->
+        <button id="addNoteBtn">+ Add Note</button>
 
-    <button id="edit">Edit note</button>
-    <button id="delete">Delete Note</button>
+        <!-- Notes Container -->
+        <div id="notesContainer"></div>
+    </div>
 
+    <!-- Template for Notes -->
+    <template id="noteTemplate">
+        <div class="note">
+            <textarea placeholder="Write your note here..."></textarea>
+            <button class="deleteBtn">Delete</button>
+        </div>
+    </template>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
